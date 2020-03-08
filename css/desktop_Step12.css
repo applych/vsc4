@@ -1,0 +1,293 @@
+@charset "UTF-8";
+body {
+	background-color: #B1B1B1;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	color:  #333;
+	font-size: 75%;
+	line-height: 113%;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+	padding:0;
+	margin:0;
+}
+.bg_home {
+	background:url(../bilder/bg_home.jpg);
+	background-attachment:fixed;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	background-size:cover;
+}	
+.wrapper {
+	width: 90%;
+	max-width: 950px;
+	margin: 0 auto;
+}
+header {
+	background-color:#fff;
+}
+header img {
+	margin: 21px 0 19px 13px;
+}
+nav {
+	background-color:  #2e84d5;
+	height:45px;
+	width: 100%;
+}
+nav li {
+	list-style-type:none;
+	float:left;
+}	
+nav li a {
+	width:158px;
+	height:30px;
+	display:block;
+	text-align:center;
+	font-size:175%;
+	color:#FFF;
+	text-decoration:none;
+	padding-top:15px;
+}	
+nav li a:hover, nav li.active {
+	background-color:  #4d99e3;
+}	
+article {
+	background-color:#FFF;
+	width:31.3%;
+	float:left;
+	margin-right:3%;
+	margin-top:104px;
+}
+.last-article {
+	margin-right:0px;
+}	
+h2 {
+	background-color:  rgba(72, 152, 230, 0.9);
+	height: 31px;
+}
+section article h2 {
+	padding:14px 0 0 34px;
+	font-size:175%;
+	color:#FFF;
+	font-weight:normal;
+}
+section article p {
+	margin:15px 17px 15px 13px;
+	line-height:145%;
+}
+section article a {
+	background-color:  #2782d8;
+	padding:9px 14px;
+	color:#FFF;
+	text-decoration:none;
+	float:right;
+}
+section article a:hover {
+	background-color: #1E63A5;
+}
+footer {
+	background-color:  #4296e8;
+	height: 45px;
+	width: 90%;
+	max-width: 950px;
+	position:fixed;
+	bottom:0;
+}
+footer li {
+	list-style-type:none;
+	float:left;
+	width:25%;
+	text-align:center;
+	font-size:133%;
+	color:#FFF;
+	padding-top:16px;
+}	
+footer li a {
+	color:#fff;
+}	 
+
+footer li {
+	font-size:100%;
+	}
+
+section article img {
+	width: 100%;
+}
+
+@media (max-width: 1072px){
+nav ul li  {
+	width:16.6666%;
+	}
+nav  li a {
+	width:100%;
+	font-size:125%;
+	}
+
+section article h2 {
+	padding:14px 0 0 34px;
+	font-size:150%;
+	}
+}
+
+@media (max-width: 634px){
+
+article {
+	width:100%;
+	margin-top:52px;
+	}
+
+.last-article {
+	margin-bottom:82px;
+	}	
+	
+nav {
+	height: auto;
+	}	
+	
+nav ul li {
+	float:none;
+	width:86.6666%;
+	margin: 0 auto;
+	}	
+	
+nav ul li a {
+	height: 12px;
+	font-size: 125%;
+	padding: 7px 0;
+	}	
+	
+	
+/*footer - Elemente untereinander */
+
+footer {
+		
+	height: 100px;
+	}
+footer li {
+	font-size:100%;
+	line-height: 0.5;
+	float:none;
+	width:86.6666%;
+	margin: 0 auto;
+	}
+	
+	
+}
+
+
+@media (max-width: 389px){
+	
+	header img {
+	height: auto;
+	width: 70%;
+	}
+}
+
+ /*----------------------------------------------------------------------------- */
+ /*                      Toggle-Nav-Styles im Basis-Layout                        */
+ /* ----------------------------------------------------------------------------- */
+header {
+    position: relative;
+}
+
+/* Menü-Link im Header zum Ein-und Ausblenden des Menüs */
+a.toggle-nav {
+	display: inline-block;
+	position: absolute;
+	right: 2%;
+	top: 0.5em;
+	text-decoration: none;
+	-webkit-border-radius: 0.4em;
+	-moz-border-radius: 0.4em;
+	border-radius: 0.4em;
+	cursor: pointer;
+	padding: 0.357em;
+	color: #D0E4F2;
+	background: #2782d8;
+	border: 1px solid #2782d8;
+}
+
+a.toggle-nav:hover {
+	border: 1px solid #1E63A5;
+	background: #1E63A5;
+}
+
+
+/* ----------------------------------------------------------------------------- *
+ *        Beispiel Toggle-Navigation mit :target ohne JS im Basis-Layout         *
+ * ----------------------------------------------------------------------------- */
+
+/* Navigations-Leiste ausblenden */
+#navMain {
+    display: none;
+}
+	/* Navigations-Leiste anzeigen wenn URL auf "xyz.html#navMain" endet*/
+#navMain:target {
+    display: block;
+}
+
+/* ----------------------------------------------------------------------------- *
+ *                  Beispiel Toggle-Navigation ab "Tablet-Grösse"                  *
+ * ----------------------------------------------------------------------------- */
+@media only screen and (min-width: 635px) {
+	
+	/* Navigations-Leiste anzeigen in  Viewports ab "Tablet-Grösse" */
+#navMain {
+       display: block;
+    }
+
+    /* Menü-Button verstecken in  Viewports ab "Tablet-Grösse" */
+a.toggle-nav {
+       display: none;
+    }
+}
+
+
+
+/* ----------------------------------------------------------------------------- *
+ *                  Layout Detailseite Kontakt                  *
+ * ----------------------------------------------------------------------------- */
+
+#form article {
+	width: 420px;
+	background-color: #FFFFFF;
+	margin-bottom: 126px;
+	float: left;
+	margin-right: 15px;
+	-webkit-box-shadow: 0px 3px 3px #7F7F7F;
+	box-shadow: 0px 3px 3px #7F7F7F;
+}
+
+.contact-box {
+	width: 420px;
+	height: 450px;
+	padding: 10px 20px 20px;
+}
+.form-design {
+	width: 100%;
+	margin-bottom: 15px;
+	padding-top: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	margin-top: 4px;
+}
+.form-hight {
+	height: 100px;
+}
+.form-btn {
+font-family: 'Open Sans', sans-serif;
+font-weight: normal;
+font-size: 21px;
+border: none;
+float: right;
+background-color: rgb(38,129,216);
+width: 200px;
+height: 45px;
+line-height: 120%;
+color: rgb(255,255,255);
+text-align: left;
+margin: 20px -20px -20px 0;
+}
+

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hotel Wellness - Kontakt</title>
+<link href="css/desktop_Step12.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+</head>
+
+<body class="bg_home">
+<div class="wrapper">
+  <header><img src="bilder/goldenbeach.png" />
+   	<a id="toggleNav" class="toggle-nav" href="#navMain">Menü</a>
+    <nav id="nav">
+      <ul id="navMain" class="main-nav">
+        <li><a href="index.html">Home</a></li> 
+        <li><a href="#">Zimmer</a></li>  
+        <li><a href="#">Restaurant</a></li> 
+        <li><a href="#">Wellness</a></li>  
+        <li><a href="#">Galerie</a></li> 
+        <li class="active"><a href="#">Kontakt</a></li>
+      </ul> 
+    </nav>
+  </header>
+  <section id="form">
+  <article class="contact-box">
+    <h2>Treten Sie mit uns in Kontakt</h2>
+    <form action="kontaktformular.php" method="post" name="anfrage" id="anfrage">
+      <label for="name">Name:</label>
+      <br>
+      <input name="name" type="text" required class="form-design" id="name" form="anfrage" tabindex="1" title="Name" maxlength="20"><br>
+      <label for="email">E-Mail:</label>
+      <br>
+<input name="email" type="email" required class="form-design" id="email" form="anfrage" tabindex="2" title="E-Mail">
+      
+      <br>
+      <label for="nachricht">Nachricht:</label>
+      <br>
+<textarea name="nachricht" required class="form-design form-hight" id="nachricht" form="anfrage" placeholder="Nachricht" tabindex="3"></textarea>
+<br>
+<input name="button" type="submit" class="form-design form-btn" id="sent" form="anfrage" tabindex="4" value="Absenden">
+&nbsp;
+    </form>
+</article>
+  <article class="lastarticle contact-box">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61673.89179827132!2d9.80903193364107!3d46.910059623640045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4784ae4e0b0c6f1b%3A0x1661a27ee92ad8e8!2s7247+Saas+im+Pr%C3%A4ttigau%2C+Schweiz!5e0!3m2!1sde!2sus!4v1529319327495" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </article>
+  </section>
+  <footer>
+    <ul>
+      <li>Tel.: 0032 - 54321-0</li>
+      <li>Fax.: 0032 - 65432-1</li>
+      <li>E-Mail: <a href="mailto:info@golden-beach.com">info@golden-beach.com</a></li>
+      <li><a href="http://www.golden-beach.com">www.golden-beach.com</a></li>
+    </ul>
+  </footer>
+</div>
+</body>
+</html>
